@@ -1,0 +1,37 @@
+ 
+Aula 3
+
+
+* Criar novo projeto
+
+mkdir ReactNative && cd ReactNative
+
+
+npx create-expo-app@latest miiapp -t
+
+Obs.: Escolher a opção BLANK
+
+
+npx expo install react-dom react-native-web @expo/metro-runtime
+
+expo --version
+
+cd miiapp
+
+code .
+
+npx expo start
+
+
+---------------------------------------------------
+
+* Para forçar um reload no Simulador do Android Studio
+
+Ctrl m
+
+---------------------------------------------------
+
+1. Adicionando estados na aplicação [useState]
+
+import {useState} from 'react'
+

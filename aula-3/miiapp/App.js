@@ -11,7 +11,6 @@ export default function App() {
         style={styles.logo}
       />
       
-      // Botão com opacidade
       <TouchableOpacity style={styles.button}>
         <Text style={styles.textButton}>Hello</Text>
       </TouchableOpacity>
