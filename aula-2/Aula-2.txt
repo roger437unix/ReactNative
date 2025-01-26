@@ -25,7 +25,173 @@ npx expo start
 
 ---------------------------------------------------
 
+* Para forçar um reload no Simulador do Android Studio
+
+Ctrl m
+
+---------------------------------------------------
+
+1. Criar um componente chamado "APP" que retorna um JSX
+
+// Criar um componente chamado App
+export default function App() {
+  return(
+    <View>
+      <Text>Programando com ReactNative!</Text>    
+    </View>
+  )    
+}
+
+
+2. Adicionado estilo inline
+
+export default function App() {
+  return(
+    <View style={{ marginTop:100, backgroundColor:"#2580aa", flex: 1 }}>
+      <Text>Programando com ReactNative!</Text>    
+    </View>
+  )    
+}
 
 
 ---------------------------------------------------
+
+
+3. Criando grupo de estilos
+
+import { View, Text, StyleSheet } from 'react-native'
+
+// Criar um componente chamado App
+export default function App() {
+  return(
+    <View style= {styles.container}>
+      <Text>Programando com ReactNative!</Text>    
+    </View>
+  )    
+}
+
+
+// Criando grupo de estilos
+const styles = StyleSheet.create({
+  container: {
+    flex: 100,    
+    backgroundColor: "#f3f3ff",
+    justifyContent: 'center',
+    alignItems: "center"
+  }
+})
+
+
+---------------------------------------------------
+
+
+4. Adicionado estilo ao componente Text
+
+
+import { View, Text, StyleSheet } from 'react-native'
+
+// Criar um componente chamado App
+export default function App() {
+  return(
+    <View style= {styles.container}>
+      <Text style={styles.texto}>Programando com ReactNative!</Text>    
+    </View>
+  )    
+}
+
+
+// Criando grupo de estilos
+const styles = StyleSheet.create({
+  container: {
+    flex: 100,    
+    backgroundColor: "#f3f3ff",
+    justifyContent: 'center',
+    alignItems: "center"
+  },
+
+  texto: {
+    fontSize: 20,
+    fontWeight: 'bold',                     // normal
+    // fontStyle: 'italic',
+    // textDecorationLine: 'underline',    // line-through
+    // letterSpacing: 2,       
+    color: "#004500"
+  }
+})
+
+
+
+---------------------------------------------------
+
+
+5. Adicionando uma imagem utilizando um componente Image
+
+mkdir -p src/assets
+
+Obs.: Copiar um arquivo PNG no diretório src/assets.
+
+
+import { View, Text, StyleSheet, Image } from 'react-native'
+
+// Criar um componente chamado App
+export default function App() {
+  return(
+    <View style= {styles.container}>
+      <Text style={styles.titulo}>Programando com ReactNative!</Text>
+
+      <Image 
+        source = {require("./src/assets/tux_Chewbacca.png")} 
+        style={styles.logo}
+      />
+
+      <Text style= {styles.paragrafo}>Android e Ios</Text>
+    </View>
+  )
+}
+
+
+// Criando grupo de estilos
+const styles = StyleSheet.create({
+  container: {
+    flex: 100,    
+    backgroundColor: "#f3f3ff",
+    justifyContent: 'center',
+    alignItems: "center"
+  },
+
+  titulo: {
+    fontSize: 20,
+    fontWeight: 'bold'
+  },
+
+  logo: {
+    marginTop: 60,
+    marginBottom: 60
+  },
+
+  paragrafo: {
+    fontSize: 20,
+    color: "#20caf0"
+  }
+})
+
+
+---------------------------------------------------
+
+6. Adicionado Botão com opacidade
+
+
+
+
+
+---------------------------------------------------
+
+* Componentes default do ReactNative
+
+- View          [Uma área para por outros componentes dentro]
+
+
+---------------------------------------------------
+
+
 

@@ -47,3 +47,13 @@ Obs.: Instalar app EXPO Go no Smartphone
 
 ---------------------------------------------------
 
+
+* Enviar para Github
+
+git status
+
+git add .
+
+git commit -m "Preparação do ambiente"
+
+git push
