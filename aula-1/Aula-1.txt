@@ -1,0 +1,49 @@
+ 
+Aula 1 - Preparação do ambiente ReactNative e EXPO
+
+
+* Atualizar no Node
+
+sudo npm install -g n
+
+sudo n stable
+
+node -v 
+
+npm -v
+
+
+---------------------------------------------------
+
+* EXPO Docs
+
+https://docs.expo.dev/
+
+
+* Criar novo projeto
+
+mkdir ReactNative && cd ReactNative
+
+
+npx create-expo-app@latest miiapp -t
+
+Obs.: Escolher a opção BLANK
+
+
+npx expo install react-dom react-native-web @expo/metro-runtime
+
+expo --version
+
+cd miiapp
+
+code .
+
+npx expo start
+
+
+---------------------------------------------------
+
+Obs.: Instalar app EXPO Go no Smartphone
+
+---------------------------------------------------
+
