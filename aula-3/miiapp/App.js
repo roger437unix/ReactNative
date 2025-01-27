@@ -8,10 +8,9 @@ import { ModalMensagem } from './src/components/modal'
 export default function App() {
 
   // Criando um estado [evento]
-  // const [size, setSize] = useState(10)
-  // size : nome do useState
-  // setSize : Ação para trocar o valor do useState
-  // 10 é o valor inicial do useState, ou seja, size começa com 10
+  // modalVisible : nome do useState
+  // setModalVisible : Ação para trocar o valor do useState
+  // 'false' é o valor inicial do useState, ou seja, setModalVisible inicia 'false'
 
   const [modalVisible, setModalVisible] = useState(false)
 
