@@ -1,7 +1,26 @@
-import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native'
+import { useState } from 'react'
+import { View, Text, StyleSheet, Image, TouchableOpacity, Modal } from 'react-native'
+
+// Importando Modal
+import { ModalMensagem } from './src/components/modal'
 
 // Criar um componente chamado App
 export default function App() {
+
+  // Criando um estado [evento]
+  // const [size, setSize] = useState(10)
+  // size : nome do useState
+  // setSize : Ação para trocar o valor do useState
+  // 10 é o valor inicial do useState, ou seja, size começa com 10
+
+  const [modalVisible, setModalVisible] = useState(false)
+
+  function funcMensagem() {
+    console.log("Seja bem-vindo!")
+    setModalVisible(true)
+  }
+
+
   return(
     <View style= {styles.container}>
       <Text style={styles.titulo}>Programando com ReactNative!</Text>
@@ -10,10 +29,14 @@ export default function App() {
         source = {require("./src/assets/tux_Chewbacca.png")} 
         style={styles.logo}
       />
-      
-      <TouchableOpacity style={styles.button}>
+            
+      <TouchableOpacity style={styles.button} onPress={funcMensagem}>
         <Text style={styles.textButton}>Hello</Text>
       </TouchableOpacity>
+
+      <Modal visible={modalVisible} animationType='fade' transparent={true}>
+        <ModalMensagem handleClose={ () => setModalVisible(false) } />
+      </Modal>
 
     </View>
   )
