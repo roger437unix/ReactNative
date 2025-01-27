@@ -1,5 +1,5 @@
  
-Aula 3 - IMC
+Aula 4
 
 
 * Criar novo projeto
@@ -31,5 +31,20 @@ Ctrl m
 
 ---------------------------------------------------
 
-1.  
----------------------------------------------------
+1. Adicionando estados na aplicação [useState]
+
+import {useState} from 'react'
+
+Obs.: Será utilizada a propriedade "onPress{função} do botão
+
+<TouchableOpacity style={styles.button} onPress={funcMensagem}>
+  <Text style={styles.textButton}>Hello</Text>
+</TouchableOpacity>
+
+
+2. Tela de saída com Modal
+
+mkdir -p src/components/modal
+
+touch src/components/model/index.js
+
