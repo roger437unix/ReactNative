@@ -4,17 +4,13 @@ Aula 2
 
 * Criar novo projeto
 
-mkdir ReactNative && cd ReactNative
+mkdir native && cd native
 
 
-npx create-expo-app@latest miiapp -t
+npx create-expo-app@latest --template
 
-Obs.: Escolher a opção BLANK
-
-
-npx expo install react-dom react-native-web @expo/metro-runtime
-
-expo --version
+Obs.: Chamei o projeto "miiapp"
+      Escolher a opção BLANK
 
 cd miiapp
 
@@ -29,26 +25,35 @@ npx expo start
 
 Ctrl m
 
+
 ---------------------------------------------------
 
-1. Criar um componente chamado "APP" que retorna um JSX
+
+1. Criar um componente chamado "App" que retorna um JSX [JavaScript XML]
 
 // Criar um componente chamado App
+import { Text } from 'react-native';
+
 export default function App() {
   return(
     <View>
-      <Text>Programando com ReactNative!</Text>    
+      <Text>ReactNative is fun!!!</Text>    
     </View>
-  )    
+  );    
 }
+
+
+---------------------------------------------------
 
 
 2. Adicionado estilo inline
 
+import { Text } from 'react-native';
+
 export default function App() {
   return(
-    <View style={{ marginTop:100, backgroundColor:"#2580aa", flex: 1 }}>
-      <Text>Programando com ReactNative!</Text>    
+    <View style={ {backgroundColor: '#efefef', flex: 1, alignItems: 'center', justifyContent: 'center', marginTop: '32'} }>
+      <Text style={ {fontSize: 30, color: '#25af80', fontWeight: 'bold', fontStyle: 'italic'} }>ReactNative is fun!!!</Text>    
     </View>
   )    
 }
