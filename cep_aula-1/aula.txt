@@ -1,5 +1,5 @@
 
-* Formato JSX
+* Formato JSX [JavaScript XML]
 
 JavaScript com tags
 
