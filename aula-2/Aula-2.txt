@@ -1,6 +1,9 @@
  
 Aula 2
 
+// Utilização de componentes JSX com estilos
+// Sem geração de eventos
+
 
 * Criar novo projeto
 

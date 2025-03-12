@@ -1,3 +1,6 @@
+// Utilizando apenas componentes JSX
+// Sem geração de eventos
+
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native'
 
 // Criar um componente chamado App
@@ -11,7 +14,6 @@ export default function App() {
         style={styles.logo}
       />
       
-      // Botão com opacidade
       <TouchableOpacity style={styles.button}>
         <Text style={styles.textButton}>Hello</Text>
       </TouchableOpacity>

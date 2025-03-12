@@ -10,9 +10,9 @@ export default function Tux() {
   const [nome, setNome] = useState('');
 
   const funcMessage = () => {
-    if (nome != '') {
-      console.log(`Seja bem-vindo ${nome}.`);
-      alert(`Seja bem-vindo ${nome}.`);
+    if (nome.trim() != '') {
+      console.log(`Seja bem-vindo ${nome.trim()}.`);
+      alert(`Seja bem-vindo ${nome.trim()}.`);
       setNome('');
     }
   }
