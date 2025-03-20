@@ -1,4 +1,5 @@
 // Cálculo do IMC
+// Usando alert como saída
 
 import { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity } from 'react-native';
