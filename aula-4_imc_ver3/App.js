@@ -21,7 +21,7 @@ export default function App() {
       // Imc
       const valorImc = peso / altura ** 2;
       setImc(valorImc.toFixed(1));
-      setTextoImc('Imc:')
+      setTextoImc('Imc:');
 
       // Estado
       const estadoPessoa = (valorImc < 17) ? 'Muito abaixo do peso' : (valorImc >= 17 && valorImc < 18.5) ? 'Abaixo do peso' :
