@@ -1,6 +1,5 @@
-// Primo versão 3
-// Indicando todos os números que houve divisibilidade
-// Usando uma lista [array do JavaScript]
+// Primo versão 2
+// Indicando apenas o primeiro número que houve divisibilidade
 
 import { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity } from 'react-native';
@@ -17,31 +16,26 @@ export default function App() {
 
   function primo() {
     let isPrimo = true;
-    nums = [];
 
     if (num.trim() != '' && !isNaN(num)) {
       const n = num;
       for (let i = 2; i < n / 2 + 1; i++) {
         if (n % i == 0) {
           isPrimo = false;
-          nums.push(i);
-          nums.push(', ');
+          setMsg('não é primo');
+          setMsgDiv('É divisível por: ');
+          setDivisivel(i);
+          break
         }
       }
       if (isPrimo) {
-        setMsg('é primo')
+        setMsg('é primo');
         setDivisivel('');
         setMsgDiv('');
-      }
-      else {
-        setMsg('não é primo');        
-        setMsgDiv('É divisível por: ');
-        nums.pop();
-        setDivisivel(nums);
-      }
+      }    
 
       setOutput(num);
-      setNum('');
+      setNum('');      
     }
     else {
       setOutput('');

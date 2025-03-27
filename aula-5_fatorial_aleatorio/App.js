@@ -1,3 +1,6 @@
+// Calcula o fatorial de um número e gera um númeto aleatório
+// Não utiliza botão para enviar
+
 import { View, Text, TextInput, TouchableOpacity } from 'react-native';
 import { useState } from 'react';
 import { styles } from './style';

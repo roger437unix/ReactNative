@@ -1,4 +1,4 @@
-// Cálculo do IMC versão 2
+// Informa se um número é ou não primo
 // Usando saída com Text
 
 import { useState } from 'react';
