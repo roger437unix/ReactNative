@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 export default function MainScreen({ navigation }) {
 
     function callMenuScreen() {          
-        navigation.navigate('MenuScreen');
+        navigation.navigate('Tela de menu');
     }
 
     return (
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     },
     buttons: {
         width: '50%',
-        height: 40,
+        height: 70,
         backgroundColor: '#00ff77',
         alignItems: 'center',
         justifyContent: 'center',
