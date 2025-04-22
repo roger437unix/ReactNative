@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet, Image } from "react-native";
 
 export default function MainScreen({ navigation }) {
 
@@ -8,7 +8,9 @@ export default function MainScreen({ navigation }) {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Tela principal</Text>
+            <Text style={styles.title}>Rodrigo Pizzaria</Text>
+
+            <Image source={require('./src/assets/italia.jpg')} />            
 
             <TouchableOpacity style={styles.buttons} onPress={callMenuScreen}>
                 <Text style={styles.textButtons}>Cardápio</Text>
@@ -25,7 +27,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',        
     },
     title: {
-        marginTop: 100,
+        marginTop: 80,
         fontSize: 30,
         fontWeight: 'bold',
         marginBottom: 50
@@ -37,7 +39,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 10,
-        marginBottom: 15
+        marginTop: 80        
     },
     textButtons: {
         fontSize: 17,

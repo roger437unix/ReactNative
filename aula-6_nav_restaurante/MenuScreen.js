@@ -19,14 +19,14 @@ export default function MenuScreen({ navigation }) {
                 <View>
                     <TouchableOpacity style={styles.buttonsView} onPress={tela1}>
                         <Text style={styles.textButtons}>Calabresa</Text>
-                        <Image source={require('./src/assets/calabresa.jpg')} resizeMode='center' style={{flex:.9 }} />
+                        <Image source={require('./src/assets/calabresa.jpg')} resizeMode='center' style={{flex:.6 }} />
                     </TouchableOpacity>
 
                 </View>
                 <View>
                     <TouchableOpacity style={styles.buttonsView} onPress={tela2}>
-                        <Text style={styles.textButtons}>Portuguesa</Text>
-                        
+                        <Text style={styles.textButtons}>Aliche</Text>
+                        <Image source={require('./src/assets/aliche.jpg')} resizeMode='center' style={{flex:.6 }} />
                     </TouchableOpacity>
                 </View>
             </View>
@@ -35,14 +35,14 @@ export default function MenuScreen({ navigation }) {
                 <View>
                     <TouchableOpacity style={styles.buttonsView} onPress={tela3}>
                         <Text style={styles.textButtons}>Palmito</Text>
-                        <Image source={require('./src/assets/palmito.jpeg')} resizeMode='center' style={{flex:.85 }} />
+                        <Image source={require('./src/assets/palmito.jpeg')} resizeMode='center' style={{flex:.6 }} />
                     </TouchableOpacity>
 
                 </View>
                 <View>
                     <TouchableOpacity style={styles.buttonsView} onPress={tela4}>
-                        <Text style={styles.textButtons}>Aliche</Text>
-                        
+                        <Text style={styles.textButtons}>Portuguesa</Text>
+                        <Image source={require('./src/assets/portuguesa.jpg')} resizeMode='center' style={{flex:.6 }} />
                     </TouchableOpacity>
                 </View>
             </View>
@@ -62,10 +62,10 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     title: {
-        marginTop: 50,
+        marginTop: 40,
         fontSize: 30,
         fontWeight: 'bold',
-        marginBottom: 50
+        marginBottom: 30
     },
     buttons: {
         width: '50%',
@@ -77,13 +77,15 @@ const styles = StyleSheet.create({
         marginTop: 30
     },
     buttonsView: {
-        width: 150,
-        height: 120,
-        backgroundColor: '#ffaa00',
+        //width: 150,
+        width: 200,
+        //height: 120,
+        height: 160,
+        //backgroundColor: '#ffaa00',        
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 10,
-        marginBottom: 50,
+        marginBottom: 5,
         marginRight: 10,
         marginLeft: 10
     },
