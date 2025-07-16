@@ -1,26 +1,17 @@
- 
-Aula 2
+ Aula 2
 
-// Utilização de componentes JSX com estilos
+// Utilização de componentes JSX [JavaScript XML]com estilos
 // Sem geração de eventos
-
 
 * Criar novo projeto
 
-mkdir native && cd native
-
-
 npx create-expo-app@latest --template
 
-Obs.: Chamei o projeto "miiapp"
-      Escolher a opção BLANK
+Obs.: Escolher a opção BLANK
 
-cd miiapp
-
+cd app
 code .
-
 npx expo start
-
 
 ---------------------------------------------------
 
@@ -28,9 +19,7 @@ npx expo start
 
 Ctrl m
 
-
 ---------------------------------------------------
-
 
 1. Criar um componente chamado "App" que retorna um JSX [JavaScript XML]
 
