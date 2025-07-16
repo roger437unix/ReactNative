@@ -24,7 +24,7 @@ Ctrl m
 1. Criar um componente chamado "App" que retorna um JSX [JavaScript XML]
 
 // Criar um componente chamado App
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
 
 export default function App() {
   return(
