@@ -121,11 +121,11 @@ const styles = StyleSheet.create({
 ---------------------------------------------------
 
 
-5. Adicionando uma imagem utilizando um componente Image
+5. Adicionando uma imagem utilizando o componente Image
 
 mkdir -p src/assets
 
-Obs.: Copiar um arquivo PNG no diretório src/assets.
+Obs.: Copiar um arquivo PNG para o diretório src/assets.
 
 
 import { View, Text, StyleSheet, Image } from 'react-native'
