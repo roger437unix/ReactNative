@@ -1,17 +1,12 @@
- 
 Aula 1 - Preparação do ambiente ReactNative e EXPO
-
 
 * Atualizar o Node [Para Linux]
 
 sudo npm install -g n
 
 sudo n stable
-
 node -v 
-
 npm -v
-
 
 ---------------------------------------------------
 
@@ -22,20 +17,13 @@ https://docs.expo.dev/
 
 * Criar novo projeto
 
-mkdir native && cd native
-
-
 npx create-expo-app@latest --template
 
-Obs.: Para o nome do app escolhi "miiapp";
-      Escolher a opção BLANK
+Obs.: Escolher a opção BLANK
 
 cd miiapp
-
 code .
-
 npx expo start
-
 
 ---------------------------------------------------
 
@@ -43,13 +31,9 @@ Obs.: Instalar app EXPO Go no Smartphone
 
 ---------------------------------------------------
 
-
 * Enviar para Github
 
 git status
-
 git add .
-
 git commit -m "Preparação do ambiente"
-
 git push
