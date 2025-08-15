@@ -38,7 +38,7 @@ export const styles = StyleSheet.create({
         height: 160,
         borderRadius: 100,
         borderWidth: 4,
-        borderColor: '#180f6dff',
+        borderColor: '#2d6d0fff',
     },
     btn4: {
         backgroundColor: '#ffff25ff',
