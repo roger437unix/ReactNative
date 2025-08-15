@@ -1,5 +1,3 @@
-<div align="center">
-    ![Tela principal](Entrega-1.png)
-</div>
+![Tela principal](Entrega-1.png)
 
 ## Atividade App com botões que exibem suas propriedades
