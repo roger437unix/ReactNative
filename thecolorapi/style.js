@@ -126,7 +126,7 @@ export const styles = StyleSheet.create({
         marginRight: 10
     },
     texto: {
-        fontSize: 35,
+        fontSize: 25,
         fontWeight: 'bold'
     },
     btnClear: {
