@@ -1,7 +1,7 @@
 // Atividade para turma do terceiro semestre
 
 import { Text, View, TouchableOpacity } from 'react-native';
-import { use, useState } from 'react';
+import { useState } from 'react';
 import { styles } from './style';
 
 
@@ -67,7 +67,7 @@ export default function App() {
         <Text style={styles.texto}>{largura}</Text>
         <Text style={styles.texto}>{altura}</Text>
         <Text style={styles.texto}>{borda}</Text>
-
+        
         <TouchableOpacity style={styles.btnClear} onPress={clear}>
           <Text style={styles.textBtnClear}>Limpar</Text>
         </TouchableOpacity>

@@ -62,7 +62,7 @@ export const styles = StyleSheet.create({
         marginRight: 10
     },
     texto: {
-        fontSize: 22,
+        fontSize: 20,
         fontWeight: 'bold'
     },
     btnClear: {

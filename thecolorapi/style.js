@@ -1,0 +1,146 @@
+import { StyleSheet } from "react-native";
+
+export const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        marginTop: 25,        
+    },
+    ladoalado: {
+        flex: 1,
+        flexDirection: 'row',
+    },
+    area: {
+        flex: 1,
+        borderWidth: 5,
+        borderColor: '#ffffff',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    btn1: {
+        backgroundColor: '#41250cff',
+        width: '100%',
+        height: '100%',
+        borderRadius: 10,
+        borderWidth: 2,
+        borderColor: '#6d200fff',
+    },
+    btn2: {
+        backgroundColor: '#05241dff',
+        width: '100%',
+        height: '100%',
+        borderRadius: 10,
+        borderWidth: 2,
+        borderColor: '#0a3704ff',
+    },
+    btn3: {
+        backgroundColor: '#eb8e43ff',
+        width: '100%',
+        height: '100%',
+        borderRadius: 10,
+        borderWidth: 2,
+        borderColor: '#2d6d0fff',
+    },
+    btn4: {
+        backgroundColor: '#ffff25ff',
+        width: '100%',
+        height: '100%',
+        borderRadius: 10,
+        borderWidth: 2,
+        borderColor: '#675d05ff',
+    },
+    btn5: {
+        backgroundColor: '#a0a04dff',
+        width: '100%',
+        height: '100%',
+        borderRadius: 10,
+        borderWidth: 2,
+        borderColor: '#675d05ff',
+    },
+    btn6: {
+        backgroundColor: '#25ff87ff',
+       width: '100%',
+        height: '100%',
+        borderRadius: 10,
+        borderWidth: 2,
+        borderColor: '#675d05ff',
+    },
+    btn7: {
+        backgroundColor: '#ff7c25ff',
+        width: '100%',
+        height: '100%',
+        borderRadius: 10,
+        borderWidth: 2,
+        borderColor: '#675d05ff',
+    },
+    btn8: {
+        backgroundColor: '#9d25ffff',
+        width: '100%',
+        height: '100%',
+        borderRadius: 10,
+        borderWidth: 2,
+        borderColor: '#675d05ff',
+    },
+    btn9: {
+        backgroundColor: '#25ffedff',
+        width: '100%',
+        height: '100%',
+        borderRadius: 10,
+        borderWidth: 2,
+        borderColor: '#675d05ff',
+    },
+    btn10: {
+        backgroundColor: '#33330aff',
+       width: '100%',
+        height: '100%',
+        borderRadius: 10,
+        borderWidth: 2,
+        borderColor: '#675d05ff',
+    },
+    btn11: {
+        backgroundColor: '#12bd3dff',
+       width: '100%',
+        height: '100%',
+        borderRadius: 10,
+        borderWidth: 2,
+        borderColor: '#675d05ff',
+    },
+    btn12: {
+        backgroundColor: '#253bffff',
+        width: '100%',
+        height: '100%',
+        borderRadius: 10,
+        borderWidth: 2,
+        borderColor: '#675d05ff',
+    },
+    output: {
+        flex: 3,
+        backgroundColor: '#c4bbbbff',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderWidth: 10,
+        borderColor: '#072405ff',
+        borderRadius: 10,
+        marginTop: 20,
+        marginBottom: 30,
+        marginLeft: 10,
+        marginRight: 10
+    },
+    texto: {
+        fontSize: 35,
+        fontWeight: 'bold'
+    },
+    btnClear: {
+        backgroundColor: '#3b7a06ff',
+        width: '60%',
+        height: 50,
+        borderRadius: 18,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 40
+    },
+    textBtnClear: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: '#ffffff'
+    }
+});
