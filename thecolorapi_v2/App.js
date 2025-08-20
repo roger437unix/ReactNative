@@ -1,3 +1,5 @@
+// Atividade Mobile
+
 import { Text, View, TouchableOpacity, TextInput } from 'react-native';
 import { useState } from 'react';
 import { styles } from './style';
@@ -17,6 +19,10 @@ export default function App() {
       setNomeCor(nomeCor);
       setNome(codigoCor);
     }
+    else {
+      setNomeCor('');
+      setNome(747679);
+    }
   }
 
   const propriedades = (dados) => {
@@ -32,7 +38,7 @@ export default function App() {
     <View style={styles.container}>
 
       <View style={styles.areaSuperior}>
-        <Text style={styles.texto}>Cor em hexadecial</Text>
+        <Text style={styles.title}>Cor em hexadecial</Text>
 
         <TextInput
           style={styles.txtCor}
@@ -45,10 +51,19 @@ export default function App() {
           <Text style={styles.textBtnNomeCor}>Nome da cor</Text>
         </TouchableOpacity>
 
-        <Text style={styles.texto}>{nomeCor}</Text>
+        <Text style={styles.output}>{nomeCor}</Text>
       </View>
 
-      <View style={{backgroundColor: `#${nome}`, flex: 1, width: '60%', height: '60%', marginBottom: 40}}></View>
+      <View style={{
+        backgroundColor: `#${nome}`,
+        flex: .4,
+        width: '60%',
+        height: '100%',
+        borderRadius: 60,
+        borderWidth: 2,
+        borderColor: '#072405ff',
+        marginBottom: 100
+      }}></View>
 
     </View>
   );

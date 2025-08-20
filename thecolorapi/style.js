@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     btn1: {
-        backgroundColor: '#41250cff',
+        backgroundColor: '#B8860Bff',
         width: '100%',
         height: '100%',
         borderRadius: 10,
